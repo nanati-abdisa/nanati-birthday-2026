@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Nanati's Birthday Lounge 👑</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <!-- Floating birthday decorations -->
+  <div class="party-bg" aria-hidden="true">
+    <span class="b b1">🎈</span><span class="b b2">🎈</span><span class="b b3">🎈</span><span class="b b4">🎈</span>
+    <span class="b b5">🎈</span><span class="b b6">🎈</span><span class="s s1">✨</span><span class="s s2">🎉</span>
+    <span class="s s3">✨</span><span class="s s4">🎊</span>
+  </div>
+
+  <!-- ============== LOGIN ============== -->
+  <main id="loginView" class="login-wrap">
+    <div class="login-card">
+      <div class="login-cake">🎂</div>
+      <h1 class="font-serif">Welcome, Birthday Girl!</h1>
+      <p>This is your private lounge. Only you can see it. 👑</p>
+      <form id="loginForm">
+        <label>USERNAME<input type="text" id="loginUser" value="nanati" autocomplete="username" required></label>
+        <label>PASSWORD<input type="password" id="loginPass" autocomplete="current-password" required></label>
+        <div class="form-error" id="loginError" role="alert"></div>
+        <button class="btn btn-gold" type="submit">Enter My Lounge ✨</button>
+      </form>
+      <a class="muted-link" href="/">← Back to my birthday page</a>
+    </div>
+  </main>
+
+  <!-- ============== DASHBOARD ============== -->
+  <div id="appView" hidden>
+    <header class="top">
+      <div class="top-inner">
+        <div class="brand font-serif">Nanati's Lounge <span>👑</span></div>
+        <div class="top-actions">
+          <a class="btn btn-ghost" href="/" target="_blank" rel="noopener">👀 View my birthday page</a>
+          <button class="btn btn-ghost" id="logoutBtn">Log out</button>
+        </div>
+      </div>
+      <nav class="tabs" id="tabs">
+        <button data-tab="overview" class="active">🎂 Overview</button>
+        <button data-tab="wishes">💌 Wishes &amp; Replies</button>
+        <button data-tab="guests">👥 Guests</button>
+        <button data-tab="gifts">🎁 Gifts</button>
+        <button data-tab="photos">📸 Photos</button>
+        <button data-tab="videos">🎬 Videos</button>
+        <button data-tab="music">🎵 Music &amp; Voice</button>
+        <button data-tab="settings">⚙️ Settings</button>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="pane active" id="pane-overview"></section>
+      <section class="pane" id="pane-wishes"></section>
+      <section class="pane" id="pane-guests"></section>
+      <section class="pane" id="pane-gifts"></section>
+      <section class="pane" id="pane-photos"></section>
+      <section class="pane" id="pane-videos"></section>
+      <section class="pane" id="pane-music"></section>
+      <section class="pane" id="pane-settings"></section>
+    </main>
+  </div>
+
+  <!-- Shared edit dialog -->
+  <dialog id="editDialog"><form id="editForm" method="dialog"></form></dialog>
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="js/filecheck.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

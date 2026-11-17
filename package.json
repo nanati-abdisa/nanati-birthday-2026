@@ -1,0 +1,23 @@
+{
+  "name": "nanati-birthday",
+  "version": "1.0.0",
+  "description": "Nanati's birthday celebration website - balloon game, wishes, gallery",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node --no-warnings server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "multer": "^2.5.0",
+    "mysql2": "^3.24.6",
+    "sql.js": "^1.16.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

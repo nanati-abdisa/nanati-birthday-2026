@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nanati's Birthday Celebration 🎂 | It's My Special Day!</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#home-section" class="brand-logo">
+          <span>Nanati</span>
+          <span class="brand-badge">Birthday Edition 🎂</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home-section" class="nav-link active">Home</a></li>
+          <li><a href="#game-section" class="nav-link">Play the Game</a></li>
+          <li><a href="#messages-section" class="nav-link">Birthday Messages</a></li>
+          <li><a href="#gallery-section" class="nav-link">More Photos</a></li>
+          <li class="nav-actions">
+            <button class="nav-extra-btn" id="navMusicToggle" title="Toggle Soft Birthday Melody">
+              🎵 Music: Off
+            </button>
+            <button class="nav-extra-btn" id="navShareBtn" title="Copy Celebration Link">
+              🔗 Share
+            </button>
+          </li>
+        </ul>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+          ☰
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= SECTION ONE: HOME PAGE HERO & ABOUT ME ================= -->
+  <!-- STRICT RULE ENFORCED: FIRST PHOTO ONLY USED HERE. NO BALLOONS ON HOMEPAGE. -->
+  <section class="hero-section" id="home-section">
+    <!-- Subtle Ornaments -->
+    <div class="hero-ornament hero-ornament-1"></div>
+    <div class="hero-ornament hero-ornament-2"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Left Column: Text & Statements -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            ✨ Celebrated with Grace &amp; Laughter
+          </div>
+
+          <h1 class="hero-title">
+            It's My <span>Special Day!</span> 🎂
+          </h1>
+
+          <p class="hero-subtitle">
+            Another beautiful chapter begins, another year of memories, laughter, growth, and endless possibilities.
+          </p>
+
+          <!-- Welcome Statement Box -->
+          <div class="hero-welcome-box">
+            "Welcome to my little birthday world! This is not just a birthday website; it's a place for memories, laughter, surprises, and beautiful wishes from the people who make life special."
+          </div>
+
+          <!-- Funny Birthday Statements Rotator -->
+          <div class="hero-quotes-rotator" id="quotesRotator">
+            <span style="font-size: 1.3rem;">💬</span>
+            <span id="rotatingQuoteText">Officially accepting love, prayers, surprises, and unlimited happiness! 😂</span>
+          </div>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#game-section" class="btn btn-primary">
+              Let's Celebrate! 🎈
+            </a>
+            <a href="#gallery-section" class="btn btn-secondary">
+              View More Photos 📸
+            </a>
+          </div>
+
+          <!-- Interactive Candle Widget -->
+          <div class="interactive-candle-box" id="candleWidget" title="Click to blow out the candle and make a wish for Nanati!">
+            <div class="candle-ui">
+              <div class="candle-flame" id="candleFlame"></div>
+              <div class="candle-wick"></div>
+              <div class="candle-stick"></div>
+            </div>
+            <div class="candle-text-group">
+              <div class="candle-title" id="candleStatusTitle">Blow Out the Candle! 🕯️</div>
+              <div class="candle-subtitle" id="candleStatusSubtitle">Click or tap to blow out the flame and send Nanati a wish!</div>
+            </div>
+            <span style="font-size: 1.4rem;">✨</span>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Nanati's Main Birthday Portrait (First Photo Only) -->
+        <div class="hero-image-wrapper">
+          <div class="royal-frame">
+            <div class="royal-frame-inner">
+              <img 
+                src="/images/hero/nanati-birthday-hero.jpg" 
+                alt="Nanati Birthday Portrait" 
+                class="hero-portrait"
+              >
+            </div>
+            <div class="hero-badge-overlay">
+              👑 The Birthday Girl • Nanati
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME SECTION -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-card">
+        <h2 class="section-title">A Little About the Birthday Girl ❤️</h2>
+        <p class="about-text">
+          Hello! I'm <strong>Nanati</strong>. I love beautiful memories, meaningful friendships, laughter, little surprises, and the people who make ordinary days extraordinary.<br><br>
+          Today is my special day, and I created this little space to celebrate another year of life with everyone who matters to me.
+        </p>
+
+        <div class="funny-quote-pill">
+          "Life is short, eat chocolate, make memories, keep promises, and never forget my birthday gift! 😂"
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION TWO: THE WISHING BALLOON GAME ================= -->
+  <!-- STRICT RULE: CALLED "THE WISHING BALLOON GAME", NOT GIFT SELECTION GAME -->
+  <section class="game-section" id="game-section">
+    <div class="container">
+      <div class="game-header">
+        <h2 class="game-title">The Wishing Balloon Game 🎈</h2>
+        <p class="game-subtitle">
+          Every balloon carries a little surprise, a little laughter, and a birthday mission. Grab your arrow, aim carefully, and let's see what destiny has prepared for you!
+        </p>
+      </div>
+
+      <div class="game-stage-container">
+        <!-- Stage A: Game Introduction -->
+        <div class="game-intro-view" id="gameIntroView">
+          <h3 class="font-serif" style="font-size: 2.2rem; color: #FFFDF8; margin-bottom: 1rem;">
+            Ready to Make a Wish? 🎈
+          </h3>
+          <p style="color: #E8D8C3; font-size: 1.1rem; max-width: 600px; margin: 0 auto 1.5rem auto;">
+            One arrow, one balloon, and an unforgettable birthday mission!
+          </p>
+
+          <div class="funny-game-rules">
+            <div class="rule-chip">
+              🎯 <strong>Aim Carefully:</strong> "Choose your target wisely. Your luck is about to be tested! 😂"
+            </div>
+            <div class="rule-chip">
+              🏹 <strong>One Arrow:</strong> "One arrow, one balloon, one unforgettable birthday mission!"
+            </div>
+            <div class="rule-chip">
+              📦 <strong>Special Responsibility:</strong> "Don't worry, the balloon is harmless. Your responsibility might not be! 😂"
+            </div>
+          </div>
+
+          <button class="btn btn-primary" id="startGameIntroBtn">
+            Start the Celebration! 🏹
+          </button>
+        </div>
+
+        <!-- Stage A2: Returning player (already played - gift is locked in) -->
+        <div class="game-returning-view" id="gameReturningView" style="display: none;">
+          <h3 class="font-serif" style="font-size: 2.1rem; color: #FFFDF8; margin-bottom: 0.75rem;">
+            Welcome back, <span id="returningName">Friend</span>! 🎈
+          </h3>
+          <p style="color: #E8D8C3; font-size: 1.05rem; max-width: 560px; margin: 0 auto;">
+            You already popped your balloon, so your birthday mission is locked in. No escaping now! 😂
+          </p>
+          <div class="returning-gift-chip" id="returningGiftChip">
+            <img src="" id="returningGiftImg" alt="Your gift">
+            <span id="returningGiftName">Your gift</span>
+          </div>
+          <div class="returning-actions">
+            <button class="btn btn-secondary" id="returningSeeGiftBtn">🎁 See My Gift Again</button>
+            <button class="btn btn-primary" id="returningWishBtn">Send My Birthday Wish 💌</button>
+          </div>
+        </div>
+
+        <!-- Stage B: Enter Name -->
+        <div class="game-name-view" id="gameNameView" style="display: none;">
+          <h3 class="font-serif" style="font-size: 2rem; color: #FFFDF8; margin-bottom: 0.75rem;">
+            Join the Celebration!
+          </h3>
+          <p style="color: #E8D8C3; font-size: 1.05rem;">
+            First, tell me who is joining the birthday celebration!
+          </p>
+
+          <div class="input-group">
+            <label class="input-label" for="participantNameInput">YOUR NAME</label>
+            <input 
+              type="text" 
+              id="participantNameInput" 
+              class="text-input" 
+              placeholder="e.g. Abel, Selam, Michael..."
+              maxlength="50"
+              autocomplete="name"
+            >
+          </div>
+
+          <button class="btn btn-primary" id="submitNameBtn" style="width: 100%;">
+            Continue to the Game 🏹
+          </button>
+        </div>
+
+        <!-- Stage C: Active Interactive Balloon Arena -->
+        <div class="game-arena-view" id="gameArenaView">
+          <div class="game-controls-bar">
+            <div class="player-status">
+              🏹 Player: <span id="arenaPlayerName" style="color: #FFFDF8;">Visitor</span>
+            </div>
+            <button class="game-audio-toggle" id="audioToggleBtn" title="Toggle Sound">
+              🔊 Sound On
+            </button>
+          </div>
+
+          <div class="balloon-canvas-wrapper" id="canvasWrapper">
+            <canvas id="gameCanvas"></canvas>
+          </div>
+
+          <div class="game-mobile-trigger">
+            <button class="btn btn-primary" id="mobileShootBtn">
+              🏹 Shoot Arrow!
+            </button>
+            <p style="font-size: 0.85rem; color: #E8D8C3; margin-top: 0.5rem;">
+              Tip: Move your finger/mouse to aim, tap to shoot!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3D GIFT REVEAL MODAL & ANIMATION ================= -->
+  <div class="gift-modal-backdrop" id="giftModalBackdrop">
+    <div class="gift-reveal-box">
+      <!-- 3D Gift Box Animation Wrap -->
+      <div class="giftbox-animation-wrap" id="giftboxAnim">
+        <div class="giftbox-body">
+          <div class="giftbox-ribbon-v"></div>
+        </div>
+        <div class="giftbox-lid">
+          <div class="giftbox-bow">🎀</div>
+        </div>
+      </div>
+
+      <!-- Reveal Content -->
+      <div class="gift-card-content">
+        <h3 class="congrats-banner">CONGRATULATIONS! 🎉</h3>
+        <p class="mission-text">
+          Your balloon has revealed your birthday mission!
+        </p>
+
+        <div class="revealed-gift-card">
+          <img src="" id="revealedGiftImg" class="revealed-gift-img" alt="Revealed Gift">
+          <h4 id="revealedGiftTitle" class="revealed-gift-title">Gift Name</h4>
+          <p id="revealedGiftDesc" class="revealed-gift-desc">Gift description</p>
+        </div>
+
+        <div class="funny-assignment-warning">
+          "Congratulations! You have officially selected Nanati's birthday gift. No escaping now! 😂"
+        </div>
+
+        <p style="font-size: 0.95rem; color: #542D1E; font-weight: 600;">
+          Thank you, <span id="modalPlayerName">Friend</span>! Your birthday mission has been recorded. Now it's time to leave a beautiful birthday message for me! ❤️
+        </p>
+
+        <!-- Redirect directly to Section Three -->
+        <button class="btn btn-primary" id="goToWishBtn" style="width: 100%;">
+          Send My Birthday Wish 💌
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= BIRTHDAY VIDEO & VOICE (filled from the admin page; hidden if empty) ================= -->
+  <section class="media-section" id="media-section" style="display: none;">
+    <div class="container">
+      <div class="messages-header">
+        <h2 class="section-title">A Little Birthday Surprise 🎬</h2>
+        <p style="max-width: 640px; margin: 0 auto; color: #5A3F33; font-size: 1.1rem;">Videos and voice notes straight from my heart to yours. ❤️</p>
+      </div>
+      <div class="media-videos" id="mediaVideos"></div>
+      <div class="media-voices" id="mediaVoices"></div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION THREE: BIRTHDAY MESSAGES ================= -->
+  <section class="messages-section" id="messages-section">
+    <div class="container">
+      <div class="messages-header">
+        <h2 class="section-title">Birthday Messages ❤️</h2>
+        <p style="max-width: 680px; margin: 0 auto; color: #5A3F33; font-size: 1.15rem;">
+          Every message is a little memory. Leave me something beautiful, funny, encouraging, or simply write whatever is in your heart. I'll treasure your wishes!
+        </p>
+      </div>
+
+      <div class="messages-grid">
+        <!-- Message Submission Form -->
+        <div class="message-form-card">
+          <h3 class="form-title font-serif">Leave a Birthday Wish ✨</h3>
+          <p class="form-subtitle">Your sweet or funny words will stay forever on my celebration board!</p>
+
+          <form id="birthdayMessageForm">
+            <div class="input-group" style="margin-top: 0; margin-bottom: 1.25rem;">
+              <label class="input-label" for="messageAuthorInput" style="color: #542D1E;">YOUR NAME</label>
+              <input 
+                type="text" 
+                id="messageAuthorInput" 
+                class="text-input" 
+                placeholder="Your Name" 
+                required
+                maxlength="50"
+              >
+            </div>
+
+            <div class="input-group" style="margin-top: 0; margin-bottom: 1rem;">
+              <label class="input-label" for="messageContentInput" style="color: #542D1E;">YOUR BIRTHDAY WISH</label>
+              <textarea 
+                id="messageContentInput" 
+                class="message-textarea" 
+                placeholder="Write your heart out to Nanati..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Suggested Birthday Wishes -->
+            <div class="suggested-wishes-label">💡 Or Pick a Quick Suggested Wish:</div>
+            <div class="suggested-wishes-container">
+              <button type="button" class="wish-chip" data-wish="Happy Birthday, Nanati! May your new year bring happiness, success, and endless blessings! ❤️">
+                "Happy Birthday, Nanati! May your new year bring happiness, success, and endless blessings! ❤️"
+              </button>
+              <button type="button" class="wish-chip" data-wish="Wishing you a beautiful year filled with love, laughter, and unforgettable memories!">
+                "Wishing you a beautiful year filled with love, laughter, and unforgettable memories!"
+              </button>
+              <button type="button" class="wish-chip" data-wish="May all your dreams come true. Keep shining and never stop smiling!">
+                "May all your dreams come true. Keep shining and never stop smiling!"
+              </button>
+              <button type="button" class="wish-chip" data-wish="Happy Birthday! May God guide you, protect you, and bless everything you do.">
+                "Happy Birthday! May God guide you, protect you, and bless everything you do."
+              </button>
+              <button type="button" class="wish-chip" data-wish="Another year of being amazing! Stay blessed and keep being yourself!">
+                "Another year of being amazing! Stay blessed and keep being yourself!"
+              </button>
+              <button type="button" class="wish-chip" data-wish="Happy Birthday! More life, more happiness, more success, and more chocolate! 😂">
+                "Happy Birthday! More life, more happiness, more success, and more chocolate! 😂"
+              </button>
+              <button type="button" class="wish-chip" data-wish="May this new chapter bring you everything your heart wishes for.">
+                "May this new chapter bring you everything your heart wishes for."
+              </button>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send My Wish 💌
+            </button>
+          </form>
+        </div>
+
+        <!-- Birthday Messages Display Cards List -->
+        <!-- STRICT RULE: Top row has Name on left, "🎁 Show" button on right! -->
+        <div class="messages-list-wrapper" id="messagesList">
+          <!-- Dynamic cards rendered by app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION FOUR: VIEW MORE PHOTOS (GALLERY) ================= -->
+  <!-- STRICT RULE: ONLY THE OTHER PHOTOS OF NANATI ARE DISPLAYED HERE -->
+  <section class="gallery-section" id="gallery-section">
+    <div class="container">
+      <div class="gallery-header">
+        <h2 class="section-title">View More Photos 📸</h2>
+        <p style="max-width: 650px; margin: 0 auto; color: #5A3F33; font-size: 1.15rem;">
+          A collection of laughter, spontaneous moments, and joyful memories. Click any photo to expand in full view!
+        </p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Gallery cards populated by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL FOR GALLERY -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content-box">
+      <button class="lightbox-close-btn" id="lightboxCloseBtn">&times;</button>
+      <button class="lightbox-prev-btn" id="lightboxPrevBtn" aria-label="Previous Photo">&#10094;</button>
+      <img src="" id="lightboxImg" class="lightbox-main-img" alt="Nanati Birthday Lightbox">
+      <button class="lightbox-next-btn" id="lightboxNextBtn" aria-label="Next Photo">&#10095;</button>
+      <div class="lightbox-caption-text" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- ================= FINAL CLOSING BANNER & FOOTER ================= -->
+  <section class="closing-section">
+    <div class="container">
+      <div class="closing-card">
+        <p class="closing-quote">
+          "Thank you for being part of my special day. Your presence, your wishes, and your kindness mean more than you know. Remember, promises are beautiful things, and I expect you to keep yours! 😂❤️"
+        </p>
+        <div class="closing-author">
+          With Love &amp; Joy, Nanati 🎂
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <p>© 2026 Nanati's Birthday Celebration • Made with love, chocolate, and champagne gold ✨</p>
+        <p style="margin-top: 0.5rem;"><a href="/admin.html" class="footer-admin-link">👑 Nanati's Lounge</a></p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Quotes Rotator Script -->
+  <script>
+    const funnyQuotes = [
+      "Officially accepting love, prayers, surprises, and unlimited happiness! 😂",
+      "A little older, a little wiser, and still wonderfully unpredictable!",
+      "Today, the world has one more reason to celebrate!",
+      "Warning: Birthday girl is expecting extraordinary treatment today! 😂"
+    ];
+    let quoteIndex = 0;
+    const quoteElement = document.getElementById('rotatingQuoteText');
+    if (quoteElement) {
+      setInterval(() => {
+        quoteIndex = (quoteIndex + 1) % funnyQuotes.length;
+        quoteElement.style.opacity = 0;
+        setTimeout(() => {
+          quoteElement.textContent = funnyQuotes[quoteIndex];
+          quoteElement.style.opacity = 1;
+        }, 300);
+      }, 5000);
+    }
+  </script>
+
+  <!-- Game and Application Logic -->
+  <script src="js/filecheck.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
